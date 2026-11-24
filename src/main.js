@@ -1,9 +1,14 @@
-import {Adminpage} from './pages/Adminpage.js'
-import { Homepage } from './pages/home.js'
+import {AdminPage} from './pages/admin.js'
+import {HomePage} from './pages/home.js'
 
-const routes={
-  '/':Homepage,
-  '/admin' :Adminpage,
-
-  function
+const routes = {
+'/': HomePage,
+'/admin': AdminPage,
 }
+function render() {
+const path = location.hash.slice(1) || '/'
+const page = routes[path] || HomePage
+document.querySelector('#app').innerHTML = page()
+}
+window.addEventListener('hashchange', render)
+render()
