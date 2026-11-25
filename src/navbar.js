@@ -1,8 +1,8 @@
 const links = [
-  { href: '#/', path:'/',label:'หน้าแรก'},
-  { href: '#/about',path:'/about',label:'เกี่ยวกับเรา'},
-  { href: '#/contact',path: '/contact',label: 'ติดต่อ'},
-  { href: '#/admin',path:'/admin',label:'แอดมิน'},
+  {href: '#/', path:'/',label:'หน้าแรก'},
+  {href: '#/about',path:'/about',label:'เกี่ยวกับเรา'},
+  {href: '#/contact',path: '/contact',label: 'ติดต่อ'},
+  {href: '#/admin',path:'/admin',label:'แอดมิน'},
 ]
 
 export function Navbar(currentPath) {
