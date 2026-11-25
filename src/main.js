@@ -1,9 +1,9 @@
 import './style.css'
-import { Navbar } from './navbar.js'
-import { HomePage } from './pages/home.js'
-import { AboutPage } from './pages/about.js'
-import { ContactPage, setupContactForm } from './pages/contact.js'
-import { AdminPage } from './pages/admin.js'
+import {Navbar} from './navbar.js'
+import {HomePage} from './pages/home.js'
+import {AboutPage} from './pages/about.js'
+import {ContactPage, setupContactForm} from './pages/contact.js'
+import {AdminPage} from './pages/admin.js'
 
 const routes = {
   '/': HomePage,
